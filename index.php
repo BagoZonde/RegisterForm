@@ -3,27 +3,16 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="styles/style.css" media="screen" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/form.js"></script>
 		<title>Register Form</title>
 	</head>
 	<body>
 		<?php
-		
-		
-			$RegisterForm = new Auth();
-			$RegisterForm->display();
-			
-			function __autoload($class_name){
-				try{
-					if (@!include_once('classes/' . $class_name . '.class.php')){
-						throw new Exception('Can\'t locate ' .$class_name. ' class file.');
-					}
-				}catch (Exception $e){
-					print '<span class="warning">' . $e->getMessage() . '</span>';
-					die();
-				}
-			}
-
-			
+			print date('Y-m-d H:i:s'); //As this is AJAX submission method, here we go with prove
 		?>
+		<div id="formWindow">
+		   Loading...
+		</div>
 	</body>
 </html>

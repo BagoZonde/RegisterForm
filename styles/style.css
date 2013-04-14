@@ -6,3 +6,44 @@ body {
 	color: #AA2200;
 	font-weight: bold;
 }
+
+#formWindow{
+    margin: 0 auto;
+	 width: 500px;
+    background-color: #EAEAEA;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+form#register_form_1,
+.thankyou{
+    width: 100%;
+}
+
+form#register_form_1 input{
+    font-family: Trebuchet MS;
+	 font-size: 12px;
+	 padding: 2px;
+}
+
+form#register_form_1 input[type=text],
+form#register_form_1 input[type=password],
+form#register_form_1 select{
+	width: 170px;
+}
+
+form#register_form_1 label{
+    display: inline-block;
+    line-height: 15px;
+    margin: 5px 10px 15px 0;
+	 padding-top: 3px;
+    vertical-align: middle;
+    width: 300px;
+	 text-align: right;
+}
+
+.error{
+	border: 2px solid #AA2200;
+}
