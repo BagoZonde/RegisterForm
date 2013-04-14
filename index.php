@@ -12,11 +12,6 @@
 			$RegisterForm = new Auth();
 			$RegisterForm->display();
 			
-			/**
-			 * 
-			 * @param type $class_name
-			 * @throws Exception
-			 */
 			function __autoload($class_name){
 				try{
 					if (@!include_once('classes/' . $class_name . '.class.php')){
